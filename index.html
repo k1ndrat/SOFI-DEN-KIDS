@@ -1,179 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622121730">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «SofiDenKids»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «SofiDenKids»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="" class="header__logo-link">
+						<div class="header__logo-text">Sofi-Den</div>
+					</a>
+				</div>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link" data-goto=".page__our-command" data-goto-top="40">Команда</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto=".page__gallery" data-goto-top="40">Галерея</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto=".page__feedback" data-goto-top="40">Контакти</a></li>
+							<!-- <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Контакти</a></li> -->
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__socials" data-da=".menu__body,767">
+					<a href="" class="header__social-link">
+						<img src="img/icons/instagram.svg" alt="instagram-logo">
+					</a>
+					<a href="" class="header__social-link">
+						<img src="img/icons/facebook.svg" alt="facebook-logo">
+					</a>
+				</div>
+
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-page">
+				<picture><source srcset="img/BG.webp" type="image/webp"><img class="main-page__background" src="img/BG.jpg" alt="background-kids"></picture>
+				<div class="main-page__container">
+					<div class="main-page__content">
+						<p class="main-page__subtitle">Мережа закладів</p>
+						<h1 class="main-page__title">SOFI-DEN KIDS</h1>
+						<p class="main-page__subtitle">де кожен важливий</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__projects projects-page">
+				<picture><source srcset="img/projects-page/bg.webp" type="image/webp"><img class="projects-page__background" src="img/projects-page/bg.png" alt="background-kids"></picture>
+				<div class="projects-page__container">
+					<div class="projects-page__items">
+						<div class="projects-page__item">
+							<h2 class="projects-page__title" data-goto=".page__kindergarden" data-goto-top="40">Sofi-Den Sadok</h2>
+							<a href="" class="projects-page__intsta-link">
+								<img src="img/icons/instagram.svg" alt="instagram-logo">
+								<p>instagram</p>
+							</a>
+						</div>
+						<div class="projects-page__item">
+							<h2 class="projects-page__title" data-goto=".page__group" data-goto-top="40">Група продовженого дня</h2>
+							<a href="" class="projects-page__intsta-link">
+								<img src="img/icons/instagram.svg" alt="instagram-logo">
+								<p>instagram</p>
+							</a>
+						</div>
+						<div class="projects-page__item">
+							<h2 class="projects-page__title" data-goto=".page__courses" data-goto-top="40">Додаткові курси</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__our-projects our-projects-page">
+				<div class="our-projects-page__container">
+					<h2 class="our-projects-page__title">Наші проєкти</h2>
+					<div class="our-projects-page__items">
+						<article class="our-projects-page__item item-project">
+							<div class="item-project__title-block">
+								<picture><source srcset="img/our-projects-page/1.webp" type="image/webp"><img src="img/our-projects-page/1.jpg" alt="project-photo"></picture>
+								<h4 class="item-project__title">Цікава кава</h4>
+							</div>
+							<div class="item-project__content-block">
+								<a href="" class="item-project__intsta-link">
+									<img src="img/icons/instagram.svg" alt="instagram-logo">
+									<p>kava_tsikava_</p>
+								</a>
+								<ul class="item-project__list">
+									<li class="item-project__item">* заходи для батьків;</li>
+									<li class="item-project__item">* зустрічі з експертами;</li>
+									<li class="item-project__item">* творчі майстер-класи;</li>
+									<li class="item-project__item">* прямі ефіри.</li>
+								</ul>
+
+								<p class="item-project__bold-text">
+									Ціль проєкту: піклуємося про емоційний стан дорослих.
+								</p>
+							</div>
+
+						</article>
+
+						<article class="our-projects-page__item item-project">
+							<div class="item-project__title-block">
+								<picture><source srcset="img/our-projects-page/1.webp" type="image/webp"><img src="img/our-projects-page/1.jpg" alt="project-photo"></picture>
+								<h4 class="item-project__title">Кожен зможе</h4>
+							</div>
+							<div class="item-project__content-block">
+								<a href="" class="item-project__intsta-link">
+									<img src="img/icons/instagram.svg" alt="instagram-logo">
+									<p>kozhen_zmozhe_</p>
+								</a>
+								<p>благодійний проєкт:</p>
+								<ul class="item-project__list">
+									<li class="item-project__item">- матеріальна підтримка дітей дитячих будинків та шкіл інтернатів;</li>
+									<li class="item-project__item">- влаштовуємо заходи для розвитку дітей;</li>
+									<li class="item-project__item">- запрошуємо цікавих гостей;</li>
+									<li class="item-project__item">- підтримка ЗСУ;</li>
+									<li class="item-project__item">- благодійні ярмарки.</li>
+								</ul>
+
+								<p class="item-project__bold-text">
+									Ціль проєкту: давати підтримку тим, хто цього потребує та вчити наших діток толерантності.
+								</p>
+							</div>
+
+						</article>
+
+						<article class="our-projects-page__item item-project">
+							<div class="item-project__title-block">
+								<picture><source srcset="img/our-projects-page/1.webp" type="image/webp"><img src="img/our-projects-page/1.jpg" alt="project-photo"></picture>
+								<h4 class="item-project__title">Курси підвищення кваліфікації для освітян</h4>
+							</div>
+							<div class="item-project__content-block">
+								<ul class="item-project__list">
+									<li class="item-project__item">* професійне навчання педагогів;</li>
+									<li class="item-project__item">* тренінги/вебінари/семінари;</li>
+									<li class="item-project__item">* консультування освітніх стартапів;</li>
+									<li class="item-project__item">* натхненні зустрічі для освітян.</li>
+								</ul>
+
+								<p class="item-project__bold-text">
+									Ціль проєкту: якісна освіта, щасливі та креативні педагоги.
+								</p>
+							</div>
+
+						</article>
+
+						<article class="our-projects-page__item item-project">
+							<div class="item-project__title-block">
+								<picture><source srcset="img/our-projects-page/1.webp" type="image/webp"><img src="img/our-projects-page/1.jpg" alt="project-photo"></picture>
+								<h4 class="item-project__title">Ми відкриті до співпраці</h4>
+							</div>
+							<div class="item-project__content-block">
+								<ul class="item-project__list">
+									<li class="item-project__item">* шукаємо креативних особистостей;</li>
+									<li class="item-project__item">* готові до створення нових проєктів;</li>
+									<li class="item-project__item">* надаємо приміщення в суборенду.</li>
+								</ul>
+
+								<p class="item-project__bold-text">
+									Ціль проєкту: розкривати і давати можливості для розвитку талантів.
+								</p>
+							</div>
+
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__gallery gallery-page">
+				<picture><source srcset="img/gallery-page/bg.webp" type="image/webp"><img class="gallery-page__background" src="img/gallery-page/bg.png" alt="gallery-background"></picture>
+				<div class="gallery-page__container">
+					<div data-gallery class="gallery gallery-page__items">
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/our-projects-page/2.jpg" class="gallery__image">
+							<picture><source srcset="img/our-projects-page/2.webp" type="image/webp"><img src="img/our-projects-page/2.jpg" alt="project-photo" class="gallery__preview"></picture>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__our-command our-command-page">
+				<div class="our-command-page__container">
+					<h2 class="our-command-page__title">Наша команда</h2>
+					<div class="our-command-page__items">
+						<div class="our-command-page__item item-command item-command-leader">
+							<div class="item-command__photo-block">
+								<picture><source srcset="img/our-command-page/01.webp" type="image/webp"><img src="img/our-command-page/01.jpg" alt="command-photo"></picture>
+								<div class="item-command__title-block">
+									<h4 class="item-command__title">Алла Сенчило</h4>
+									<p>Засновник мережі закладів</p>
+								</div>
+							</div>
+							<div class="item-command__content-block">
+								<p class="item-command__bold-text">
+									«Я хочу, щоб в Україні була якісна освіта, що відповідає часу та потребам дітей. І щоб дитячих посмішок було більше»
+								</p>
+								<p class="item-command__italic-text">
+									Алла Сенчило
+								</p>
+								<p class="item-command__item">
+									17 років в освітній сфері. Засновник мережі дитячих закладів Sofi-Den Kids, викладач УДУ ім. М. Драгоманова, кафедри Початкової та дошкільної освіти, автор навчальних посібників, спікер освітніх форумів та міжнародних конференцій.
+								</p>
+								<p class="item-command__item">
+									Експерт консалтингу з відкриття дитячих продуктів.
+								</p>
+								<p class="item-command__item">
+									Фундатор проєктів Цікава кава, Кожен зможе, курси підвищення кваліфікацій.
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="our-command-page__items-command">
+							<div class="our-command-page__item item-command">
+								<div class="item-command__photo-block">
+									<picture><source srcset="img/our-command-page/01.webp" type="image/webp"><img src="img/our-command-page/01.jpg" alt="command-photo"></picture>
+									<div class="item-command__title-block">
+										<h4 class="item-command__title">Дар’я</h4>
+										<p>Менеджер фінансів</p>
+									</div>
+								</div>
+								<div class="item-command__content-block">
+									<p class="item-command__item">
+										Ціль : Формування команди професіоналів, які створюють затишок, комфорт та турбуються про безпеку діток , плекають знання та любов . Довіра , впевненість та спокій батьків.
+									</p>
+								</div>
+							</div>
+
+							<div class="our-command-page__item item-command">
+								<div class="item-command__photo-block">
+									<picture><source srcset="img/our-command-page/01.webp" type="image/webp"><img src="img/our-command-page/01.jpg" alt="command-photo"></picture>
+									<div class="item-command__title-block">
+										<h4 class="item-command__title">Дар’я</h4>
+										<p>Менеджер фінансів</p>
+									</div>
+								</div>
+								<div class="item-command__content-block">
+									<p class="item-command__item">
+										Ціль : Формування команди професіоналів, які створюють затишок, комфорт та турбуються про безпеку діток , плекають знання та любов . Довіра , впевненість та спокій батьків.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__command-gallery command-gallery-page">
+				<picture><source srcset="img/command-gallery-page/bg.webp" type="image/webp"><img class="command-gallery-page__background" src="img/command-gallery-page/bg.png" alt="command-gallery-background"></picture>
+				<div class="command-gallery-page__container">
+					<div data-gallery class="gallery command-gallery-page__items">
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+						<a href="img/command-gallery-page/01.jpg" class="gallery__image">
+							<picture><source srcset="img/command-gallery-page/01.webp" type="image/webp"><img src="img/command-gallery-page/01.jpg" alt="command-photo" class="gallery__preview"></picture>
+						</a>
+
+					</div>
+					<div class="command-gallery-page__quote">
+						Наша команда - це щирі та відкриті професіонали, з єдиними цінностями. Працюємо з вірою та любов’ю до дітей
+					</div>
+				</div>
+			</section>
+
+			<section class="page__group group-page">
+				<div class="group-page__container">
+					<h2 class="group-page__title">Група продовженого дня</h2>
+					<iframe width="100%" height="800px" src="https://www.youtube.com/embed/Q2nG3waAChA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section class="page__courses courses-page">
+				<h2 class="courses-page__title">Додаткові курси</h2>
+				<div class="courses-page__container-bg">
+					<picture><source srcset="img/courses-page/bg.webp" type="image/webp"><img class="courses-page__background" src="img/courses-page/bg.png" alt="background-courses"></picture>
+					<div class="courses-page__container">
+						<div class="courses-page__content">
+							<div class="courses-page__photo-block">
+								<div class="courses-page__photo-block-1">
+									<div class="courses-page__photo"><picture><source srcset="img/courses-page/01.webp" type="image/webp"><img src="img/courses-page/01.jpg" alt="photo-course"></picture></div>
+									<div class="courses-page__photo"><picture><source srcset="img/courses-page/01.webp" type="image/webp"><img src="img/courses-page/01.jpg" alt="photo-course"></picture></div>
+								</div>
+								<div class="courses-page__photo-block-2">
+									<div class="courses-page__photo"><picture><source srcset="img/courses-page/01.webp" type="image/webp"><img src="img/courses-page/01.jpg" alt="photo-course"></picture></div>
+									<div class="courses-page__photo"><picture><source srcset="img/courses-page/01.webp" type="image/webp"><img src="img/courses-page/01.jpg" alt="photo-course"></picture></div>
+									<div class="courses-page__photo"><picture><source srcset="img/courses-page/01.webp" type="image/webp"><img src="img/courses-page/01.jpg" alt="photo-course"></picture></div>
+								</div>
+							</div>
+							<div class="courses-page__text-block">
+								<ul class="courses-page__list">
+									<li class="courses-page__item">логопедія (індивідуальні)</li>
+									<li class="courses-page__item">робота з психологом (індивідуальні)</li>
+									<li class="courses-page__item">арт- терапія (групові)</li>
+									<li class="courses-page__item">швидкочитання</li>
+									<li class="courses-page__item">підготовка до школи</li>
+									<li class="courses-page__item">музика (індивідуальні/групові)</li>
+									<li class="courses-page__item">танці</li>
+									<li class="courses-page__item">карате</li>
+									<li class="courses-page__item">майстер-класи</li>
+									<li class="courses-page__item">арт-живопис</li>
+									<li class="courses-page__item">оренда приміщення</li>
+									<li class="courses-page__item">святкування днів народжень</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__kindergarden kindergarden-page">
+				<div class="kindergarden-page__container">
+					<h2 class="kindergarden-page__title">Наш садок</h2>
+					<iframe width="100%" height="800px" src="https://www.youtube.com/embed/Q2nG3waAChA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section class="page__feedback feedback-page">
+				<div class="feedback-page__container">
+					<picture><source srcset="img/feedback-page/bg.webp" type="image/webp"><img class="feedback-page__background" src="img/feedback-page/bg.png" alt="background-feedback"></picture>
+					<form class="feedback-page__form">
+						<h4 class="feedback-page__title">Зв’язатися з нами</h4>
+						<input type="text" class="feedback-page__input" name="name" placeholder="Ваше ім’я" size="1">
+						<input type="text" class="feedback-page__input" name="phone" placeholder="Ваш телефон" size="1">
+						<select name="service" data-class-modif="form" data-show-selected>
+							<option value="1">Яка послуга цікавить?</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						<p>Натискаючи кнопку, я даю згоду на обробку персональних даних</p>
+						<button type="submit" id="feedBackSendBtn" class="feedback-page__btn">Надіслати</button>
+					</form>
+					<div class="feedback-page__contacts">
+						<p class="feedback-page__address">Адреса ю: м. Вишневе, вул. Освіти 6</p>
+						<p class="feedback-page__phone">Телефон: +380954474505</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__for-parents for-parents-page">
+				<div class="for-parents-page__container">
+					<div class="for-parents-page__img">
+						<picture><source srcset="img/for-parents-page/01.webp" type="image/webp"><img src="img/for-parents-page/01.jpg" alt="hands-img"></picture>
+					</div>
+					<div class="for-parents-page__content">
+						<h4 class="for-parents-page__title">Для батьків</h4>
+						<p class="for-parents-page__text">Ваша дитина найкраща! Завжди памʼятайте про це!
+							Не бійтесь помилитись, будьте щирі та вірте, що разом ви зможете все. Підтримуйте дітей в усіх їх починаннях, даруйте їм свою любов.
+						</p>
+						<p class="for-parents-page__text-italic">
+							З вірою у найкраще, колектив Sofi-Den
+						</p>
+						<div class="for-parents-page__background"><picture><source srcset="img/for-parents-page/bg.webp" type="image/webp"><img src="img/for-parents-page/bg.png" alt="background-parents"></picture></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
 	</div>
+	<script src="js/app.min.js?_v=20230622121730"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
