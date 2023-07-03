@@ -2494,6 +2494,10 @@ PERFORMANCE OF THIS SOFTWARE.
     }
     const da = new DynamicAdapt("max");
     da.init();
+    const feedbackForm = document.querySelector(".feedback-page__form");
+    feedbackForm.addEventListener("submit", (e => {
+        e.preventDefault();
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
