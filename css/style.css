@@ -602,7 +602,7 @@ body img {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 80%;
 }
 
 .main-page::before {
@@ -652,6 +652,7 @@ body img {
 .main-page__subtitle {
   line-height: 120.3125%;
   /* 77/64 */
+  text-align: center;
 }
 
 .main-page__title {
@@ -3200,7 +3201,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .main-page__subtitle {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 
   .main-page__title {
@@ -4189,15 +4190,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 1.375rem , 0.7434210526rem  +  3.1578947368vw , 4rem )) {
+@supports (font-size: clamp( 1.25rem , 0.5883458647rem  +  3.3082706767vw , 4rem )) {
     .main-page__subtitle {
-      font-size: clamp( 1.375rem , 0.7434210526rem  +  3.1578947368vw , 4rem );
+      font-size: clamp( 1.25rem , 0.5883458647rem  +  3.3082706767vw , 4rem );
     }
 }
 
-@supports not (font-size: clamp( 1.375rem , 0.7434210526rem  +  3.1578947368vw , 4rem )) {
+@supports not (font-size: clamp( 1.25rem , 0.5883458647rem  +  3.3082706767vw , 4rem )) {
     .main-page__subtitle {
-      font-size: calc(1.375rem + 2.625 * (100vw - 20rem) / 83.125);
+      font-size: calc(1.25rem + 2.75 * (100vw - 20rem) / 83.125);
     }
 }
 
