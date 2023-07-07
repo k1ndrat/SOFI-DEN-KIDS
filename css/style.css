@@ -1226,6 +1226,20 @@ body img {
           flex: 1 0 50%;
 }
 
+.item-command.item-command-leader .item-command__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 0.625rem;
+}
+
 .item-command.item-command-leader .item-command__content-block {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -1401,14 +1415,16 @@ body img {
           flex: 0 1 53.6419753086%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(6.25rem, 1fr))[3];
-  grid-template-columns: repeat(3, minmax(6.25rem, 1fr));
+  -ms-grid-columns: (minmax(5rem, 1fr))[3];
+  grid-template-columns: repeat(3, minmax(5rem, 1fr));
   -ms-grid-rows: (minmax(6.25rem, 17.5rem))[2];
   grid-template-rows: repeat(2, minmax(6.25rem, 17.5rem));
 }
 
 .courses-page__photo {
   position: relative;
+  -webkit-box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
@@ -2862,6 +2878,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.25rem;
   }
 
+  .item-command.item-command-leader .item-command__title img {
+    height: 1.875rem;
+  }
+
   .command-gallery-page__container {
     padding-top: 6.25rem;
   }
@@ -3335,6 +3355,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .item-command__content-block {
     font-size: 0.875rem;
+  }
+
+  .item-command.item-command-leader .item-command__title img {
+    height: 1.25rem;
   }
 
   .command-gallery-page__container {
@@ -4564,6 +4588,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 0.875rem , 0.7847744361rem  +  0.4511278195vw , 1.25rem )) {
     .item-command__content-block {
       font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 83.125);
+    }
+}
+
+@supports (height: clamp( 1.25rem , 1.0996240602rem  +  0.7518796992vw , 1.875rem )) {
+    .item-command.item-command-leader .item-command__title img {
+      height: clamp( 1.25rem , 1.0996240602rem  +  0.7518796992vw , 1.875rem );
+    }
+}
+
+@supports not (height: clamp( 1.25rem , 1.0996240602rem  +  0.7518796992vw , 1.875rem )) {
+    .item-command.item-command-leader .item-command__title img {
+      height: calc(1.25rem + 0.625 * (100vw - 20rem) / 83.125);
     }
 }
 
